@@ -58,7 +58,7 @@ export default function Projects() {
           {projects.map((project) => (
             <li
               key={project.title}
-              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3  w-[350px] "
+              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3  w-[350px] cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200"
             >
               <div className="flex flex-col h-full justify-between">
                 <div>

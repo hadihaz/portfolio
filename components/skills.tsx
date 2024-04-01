@@ -87,7 +87,7 @@ export default function Skills() {
               className={`
               text-[${skill.color}]  border-[${skill.color}] text-neutral-400 shadow-2xl rounded-xl  flex justify-center items-center`}
             >
-              <span className=" flex gap-2 items-center px-3 md:px-6 py-1 md:py-3 bg-neutral-900 rounded-xl">
+              <span className="cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200 flex gap-2 items-center px-3 md:px-6 py-1 md:py-3 bg-neutral-900 rounded-xl">
                 {/* {skill.icon} */}
                 {React.cloneElement(skill.icon, { size: isMobile ? 20 : 40 })} 
                 {`<${skill.name} />`}
