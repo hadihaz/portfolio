@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -14,6 +13,13 @@ const projects = [
     technologys: ["react", "typescript", "tailwindcss"],
     github: "",
     livedemo: "",
+  },
+  {
+    title: "Esperlous Cafe",
+    image: "/images/projects/esperlouscafe.png",
+    technologys: ["react", "typescript", "tailwindcss"],
+    github: "",
+    livedemo: "https://esperlouscafe.ir/",
   },
   {
     title: "ibrary",
@@ -43,38 +49,38 @@ const projects = [
     github: "https://github.com/hadihaz/tic-tac-toe",
     livedemo: "https://hadihaz.github.io/tic-tac-toe/",
   },
+
 ];
 export default function Projects() {
   return (
-    <div className="w-full max-w-screen-2xl mx-auto px-4 md:px-28 pt-12">
-      <motion.div
-        initial={{ opacity: 0, y: -300 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="flex flex-col justify-center items-start "
-      >
-        <h1 className="font-bold text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 border-green-400 border-b-2 w-full p-2">{`<Projects />`}</h1>
-        <ul className="md:p-10 p-4 md:font-bold md:text-2xl flex gap-2 md:gap-4 flex-wrap ">
+    <div className="w-full my-5 max-w-screen-2xl mx-auto px-4 lg:px-28 pt-12">
+      <div className="flex flex-col justify-start items-start ">
+        <h1 className="my-2 w-full p-2 pl-6 md:pl-12 font-bold text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 border-green-400 border-b-2 ">{`Projects `}</h1>
+        <ul className="md:p-10 md:pt-4 md:font-bold md:text-2xl flex gap-6 flex-wrap ">
           {projects.map((project) => (
             <li
               key={project.title}
-              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3  w-[350px] cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200"
+              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3 w-full sm:w-[350px] flex flex-col justify-center items-center cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200"
             >
-              <div className="flex flex-col h-full justify-between">
+              <div className="w-full flex flex-col h-full justify-between">
                 <div>
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={400}
-                    height={200}
-                    className="rounded-2xl"
+                    height={400}
+                    className="rounded-2xl w-full"
                   />
                   <h2 className="text-lg m-2">{project.title}</h2>
                 </div>
                 <div>
                   <div className="flex ">
                     {project.github && (
-                      <Link href={project.github} className="m-2 ">
+                      <Link
+                        target="_blank"
+                        href={project.github}
+                        className="m-2 "
+                      >
                         <FaGithub />
                       </Link>
                     )}
@@ -100,7 +106,7 @@ export default function Projects() {
             </li>
           ))}
         </ul>
-      </motion.div>
+      </div>
     </div>
   );
 }
