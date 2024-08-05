@@ -11,7 +11,7 @@ const projects = [
     title: "Teacher-Selection",
     image: "/images/projects/Teacher-Selection.png",
     technologys: ["react", "typescript", "tailwindcss"],
-    github: "",
+    github: "https://github.com/hadihaz/Teacher-Selection",
     livedemo: "",
   },
   {
