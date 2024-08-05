@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
 // import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
-import localFont from 'next/font/local'
-const inter = localFont({ src: '../public/fonts/Inter-Regular.ttf' })
-
-
+import localFont from "next/font/local";
+const inter = localFont({ src: "../public/fonts/Inter-Regular.ttf" });
 
 export const metadata: Metadata = {
   title: "Hadi hajiasgharzadeh",
@@ -22,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body className={`bg-gradient-to-r from-neutral-900 to-neutral-950 ${inter.className}`}>{children}</body>
+      <body
+        className={`bg-gradient-to-r from-neutral-900 to-neutral-950 bg-white ${inter.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
