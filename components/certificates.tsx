@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,24 +32,22 @@ const certificates = [
 ];
 export default function Certificates() {
   return (
-    <div className="w-full max-w-screen-2xl mx-auto px-4 md:px-28 pt-12">
-      <motion.div
-        initial={{ opacity: 0, y: -300 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+    <div className="w-full max-w-screen-2xl mx-auto px-4 lg:px-28 pt-12">
+      <div
+
         className="flex flex-col justify-center items-start "
       >
-        <h1 className="font-bold text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 border-green-400 border-b-2 w-full p-2">{`<Certificates />`}</h1>
-        <ul className="md:p-10 p-4 md:font-bold md:text-2xl flex gap-2 md:gap-4 flex-wrap ">
+        <h1 className="my-2 w-full p-2 pl-6 md:pl-12 font-bold text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 border-green-400 border-b-2 ">{`Certificates`}</h1>
+        <ul className="md:p-10 p-4 md:font-bold md:text-2xl flex gap-6  flex-wrap ">
           {certificates.map((certificate) => (
             <li
               key={certificate.title}
-              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3  w-[350px] cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200"
+              className="bg-neutral-800 shadow-2xl text-neutral-400 rounded-2xl p-3 w-full sm:w-[350px] flex flex-col justify-center items-center cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200"
             >
               <Link
                 href={certificate.address}
                 target="_blank"
-                className="flex flex-col h-full justify-between"
+                className="w-full flex flex-col h-full justify-between "
               >
                 <div>
                   <Image
@@ -58,7 +55,7 @@ export default function Certificates() {
                     alt={certificate.title}
                     width={400}
                     height={400}
-                    className="rounded-2xl"
+                    className="rounded-2xl w-full"
                   />
                   <h2 className="text-lg m-2">{certificate.title}</h2>
                 </div>
@@ -76,7 +73,7 @@ export default function Certificates() {
             </li>
           ))}
         </ul>
-      </motion.div>
+      </div>
     </div>
   );
 }
