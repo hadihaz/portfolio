@@ -93,7 +93,7 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="space-y-4 max-w-[400px] mt-10 text-transparent text-white">
+        <div className="space-y-4 max-w-[340px] lg:max-w-[400px] mt-10 text-transparent text-white">
           <div className="bg-neutral-900 rounded-xl p-5 text-base flex justify-center items-center">
             <span className="flex gap-2 items-center cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200 brightness-75 hover:brightness-100">
               <MdEmail size={30} />
