@@ -53,7 +53,7 @@ const projects = [
 ];
 export default function Projects() {
   return (
-    <div className="w-full my-5 max-w-screen-2xl mx-auto px-4 lg:px-28 pt-12">
+    <div className="w-full my-5 max-w-screen-2xl mx-auto px-4 lg:px-28 py-12 ">
       <div className="flex flex-col justify-start items-start ">
         <h1 className="my-2 w-full p-2 pl-6 md:pl-12 font-bold text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-700 border-green-400 border-b-2 ">{`Projects `}</h1>
         <ul className="md:p-10 md:pt-4 md:font-bold md:text-2xl flex gap-6 flex-wrap ">
