@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { FaCss3Alt, FaGit, FaHtml5, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaDocker, FaGit, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
   SiNextdotjs,
@@ -8,6 +8,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
 const skills = [
   {
     name: "React",
@@ -54,6 +55,16 @@ const skills = [
     icon: <SiPython size={20} color="#ffc956" />,
     color: "#ffae00",
   },
+  {
+    name: "SQL",
+    icon: <TbSql size={20} color="#00ad3a" />,
+    color: "#00ad3a",
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker size={20} color="#4287f5" />,
+    color: "#4287f5",
+  },
 ];
 export default function Skills() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,7 +75,7 @@ export default function Skills() {
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize); 
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
@@ -78,9 +89,9 @@ export default function Skills() {
               className={`
               text-[${skill.color}] border-[${skill.color}] text-neutral-400 drop-shadow-2xl rounded-xl flex justify-center items-center`}
             >
-              <span  className="  text-xs cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200 flex flex-col  gap-2 items-center px-3 md:px-6 py-1 md:py-3 bg--neutral-800 rounded-xl">
+              <span className="  text-xs cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200 flex flex-col  gap-2 items-center px-3 md:px-6 py-1 md:py-3 bg--neutral-800 rounded-xl">
                 {/* {skill.icon} */}
-                  {React.cloneElement(skill.icon, { size: isMobile ? 40 : 40 })}
+                {React.cloneElement(skill.icon, { size: isMobile ? 40 : 40 })}
                 {`<${skill.name} />`}
               </span>
             </li>
