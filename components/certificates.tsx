@@ -24,6 +24,12 @@ const certificates = [
     skills: ["typescript"],
   },
   {
+    title: "TASK-ORIENTED COURSE IN DOCKER",
+    image: "/images/certificates/docker.jpg",
+    address: "https://quera.org/certificate/G17GpO4g/",
+    skills: ["Docker"],
+  },
+  {
     title: "LEGACY JAVASCRIPT ALGORITHMS AND DATA STRUCTURES",
     image: "/images/certificates/javascript.png",
     address:
