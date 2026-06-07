@@ -15,25 +15,11 @@ const projects = [
     livedemo: "",
   },
   {
-    title: "Esperlous Cafe",
-    image: "/images/projects/esperlouscafe.png",
-    technologys: ["react", "typescript", "tailwindcss"],
-    github: "",
-    livedemo: "https://esperlouscafe.ir/",
-  },
-  {
     title: "ibrary",
     image: "/images/projects/library.png",
     technologys: ["javascript", "html", "css"],
     github: "https://github.com/hadihaz/library",
     livedemo: "https://hadihaz.github.io/library/",
-  },
-  {
-    title: "admin-dashboard",
-    image: "/images/projects/admin-dashboard.png",
-    technologys: ["html", "css"],
-    github: "https://github.com/hadihaz/admin-dashboard ",
-    livedemo: "https://hadihaz.github.io/admin-dashboard/",
   },
   {
     title: "Guess-the-number",
