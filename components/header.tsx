@@ -33,16 +33,7 @@ export default function Header() {
           />
         </div>
         <div className="flex items-center gap-10">
-          {/* <button className="px-3 md:px-4 py-2 md:py-2 text-sm md:text-md  hover:text-neutral-100 hover:scale-105 duration-200  rounded-full bg-neutral-600 bg--gradient-to-r from-green-600 to-green-900 hover:bg-gradient-to-r hover:from-green-800 hover:to-green-700 text-white hover:text-green-300 "> */}
-          <button className="px-3 md:px-4 py-2 md:py-2 text-sm md:text-md  text-neutral-200  hover:text-neutral-100 hover:scale-105 duration-200  rounded-full bg-neutral-600  ">
-            <a
-              href="/hadi-hajiasgharzadeh.pdf"
-              download="hadi-hajiasgharzadeh.pdf"
-              rel="noreferrer"
-            >
-              Download Resume
-            </a>
-          </button>
+        
           <div className="  flex justify-center items-center  space-x-4 lg:space-x-10 opacity-95">
             <Link
               className="cursor-pointer hover:text-neutral-100 hover:scale-105 duration-200 brightness-50 hover:brightness-100"
